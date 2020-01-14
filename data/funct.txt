@@ -1,0 +1,38 @@
+000000  sll rd,rt,shamt
+000010  srl rd,rt,shamt
+000011  sra rd,rt,shamt
+000100  sllv rd,rt,rs
+000110  srlv rd,rt,rs
+000111  srav rd,rt,rs
+001000  jr rs
+001001  jalr rs
+001100  syscall
+001101  break
+010000  mfhi rd
+010001  mthi rs
+010010  mflo rd
+010011  mtlo rs
+011000  mult rs,rt
+011001  multu rs,rt
+011010  div rs,rt
+011011  divu rs,rt
+100000  add rd,rs,rt
+100001  addu rd,rs,rt
+100010  sub rd,rs,rt
+100011  subu rd,rs,rt
+100100  and rd,rs,rt
+100101  or rd,rs,rt
+100110  xor rd,rs,rt
+100111  nor rd,rs,rt
+101010  slt rd,rs,rt
+101011  sltu rd,rs,rt
+Fbegin
+000000  add.s fd,fs,ft;add.d fd,fs,ft
+000001  sub.s fd,fs,ft;sub.d fd,fs,ft
+000010  mul.s fd,fs,ft;mul.d fd,fs,ft
+000011  div.s fd,fs,ft;div.d fd,fs,ft
+000101  abs.s fd,fs;abs.d fd,fs
+000111  neg.s fd,fs;neg.d fd,fs
+111010  c.seq.s fs,ft;c.seq.d fs,ft
+111100  c.lt.s fs,ft;c.lt.d fs,ft
+111110  c.le.s fs,ft;c.le.d fs,ft

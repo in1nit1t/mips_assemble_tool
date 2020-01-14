@@ -1,0 +1,30 @@
+000000  Rtype
+000001  bltz rs,label;bgez rs,label
+000010  j label
+000011  jal label
+000100  beq rs,rt,label
+000101  bne rs,rt,label
+000110  blez rs,label
+000111  bgtz rs,label
+001000  addi rt,rs,imm
+001001  addiu rt,rs,imm
+001010  slti rt,rs,imm
+001011  sltiu rt,rs,imm
+001100  andi rt,rs,imm
+001101  ori rt,rs,imm
+001110  xori rt,rs,imm
+001111  lui rt,imm
+010000  mfc0 rt,rd;mtc0 rt,rd
+010001  Ftype
+010001  bclf label;bclt label
+011100  mul rd,rs,rt
+100000  lb rt,imm(rs)
+100001  lh rt,imm(rs)
+100011  lw rt,imm(rs)
+100100  lbu rt,imm(rs)
+100101  lhu rt,imm(rs)
+101000  sb rt,imm(rs)
+101001  sh rt,imm(rs)
+101011  sw rt,imm(rs)
+110001  lwcl ft,imm(rs)
+111001  swcl ft,imm(rs)
